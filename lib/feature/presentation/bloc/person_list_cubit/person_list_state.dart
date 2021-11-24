@@ -17,7 +17,7 @@ class PersonLoading extends PersonState {
   final List<PersonEntity> oldPersonsList;
   final bool isFirstFetch;
 
-  PersonLoading(this.oldPersonsList, {this.isFirstFetch = false});
+  const PersonLoading(this.oldPersonsList, {this.isFirstFetch = false});
 
   @override
   List<Object?> get props => [oldPersonsList];
