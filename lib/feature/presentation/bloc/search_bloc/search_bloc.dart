@@ -10,7 +10,7 @@ const unexpectedErrorMessage = 'Unexpected Error';
 
 class PersonSearchBloc extends Bloc<PersonSearchEvent, PersonSearchState> {
   final SearchPerson searchPerson;
-  PersonSearchBloc({required this.searchPerson}) : super(PersonEmpty());
+  PersonSearchBloc({required this.searchPerson}) : super(PersonSearchEmpty());
 
   Stream<PersonSearchState> mapEventToState(PersonSearchEvent event) async* {
     if (event is SearchPersons) {
